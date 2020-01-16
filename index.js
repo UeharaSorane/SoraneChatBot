@@ -11,6 +11,9 @@ var bot = Line({
   	channelAccessToken: process.env.LINE_CHANNEL_ACCESSTOKEN // 同上
 });
 
+var app = express();
+app.post('/', bot.parser());
+
 var server = app.listen(process.env.PORT || 8080, function() {
 	var port = server.address().port;
 	console.log("App now running on port", port);
