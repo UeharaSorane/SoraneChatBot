@@ -18,7 +18,7 @@
 	"dependencies": {
 		"express": "4.13.3",
 		"linebot": "1.4.1",
-    "node-wit":"5.0.0"
+		"node-wit":"5.0.0"
 
 	},
 	
