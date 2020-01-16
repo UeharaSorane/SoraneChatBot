@@ -22,7 +22,7 @@ var server = app.listen(process.env.PORT || 8080, function() {
 
 bot.on('message', function(event) {
 	event.source.profile().then(function (profile) {
-		WitClient.message(Chat, {}).then((data) => {
+		WitClient.message(event.message.text, {}).then((data) => {
 				/////以下是擷取下來的資源/////
 				var src = event.source;
 				var msg = event.message.text;
