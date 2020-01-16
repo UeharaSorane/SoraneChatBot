@@ -26,7 +26,7 @@ bot.on('message', function(event) {
 		
 		event.reply(msg).then(function (data) {
 			}).catch(function (error) {
-			});
+		});
 	});
 
 });
