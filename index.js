@@ -1,5 +1,6 @@
 const express = require('express');
 const Line = require('linebot');
+var {Wit, log} = require("node-wit");
 
 var WitClient = new Wit({
   	accessToken: "EF2SSQO7WOU5TPC2PSDAIJOBW36YLW7L"
